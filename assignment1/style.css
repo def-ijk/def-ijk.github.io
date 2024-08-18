@@ -12,6 +12,13 @@ h1 {
 }
 /* this is an universal selector */
 
+.name-id {
+  color: mediumvioletred;
+  margin: auto;
+  border: 2px dashed;
+  width: 500px;
+}
+
 .my-class {
   color: deeppink;
 }
