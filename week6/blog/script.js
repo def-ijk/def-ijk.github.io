@@ -70,3 +70,46 @@ for (let i = 0; i < blogPosts.length; i++) {
 // }
 container.innerHTML = postContent;
 console.log(postContent);
+
+const boxContainer = document.querySelector(".box-container");
+console.log(boxContainer);
+
+const toggleButton = document.querySelector("#toggle-button");
+console.log(toggleButton);
+
+toggleButton.addEventListener("click", addMe);
+
+function addMe() {
+  console.log("add button is clicked");
+  // boxContainer.innerHTML += ` <div class="box purple-box"></div>
+  //     <div class="box coral-box"></div>
+  //     `;
+
+  if (count % 2 === 0) {
+    boxContainer.innerHTML += ` <div class="box purple-box"></div>`;
+  } else {
+    boxContainer.innerHTML += `<div class="box coral-box"></div>`;
+  }
+  count++;
+}
+
+let removeButton = document.querySelector("#reomve-button");
+removeButton.addEventListener("dblclick", removeMe);
+
+function removeMe() {
+  let lastBox = boxContainer.lastElementChild;
+  console.log(lastBox);
+  if (lastBox) {
+    lastBox.remove();
+  }
+  count--;
+}
+
+boxContainer.addEventListener("mouseenter", dropMe);
+function dropMe() {
+  boxContainer.classList.add("drop");
+}
+boxContainer.addEventListener("mouseleave", pickMe);
+function pickMe() {
+  boxContainer.classList.remove("drop");
+}
