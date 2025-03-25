@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hjx</h1>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://mimo.app/i/tara.png" alt="me" class="profile" />
+      <p>Describe a bit about yourself here.</p>
+    </section>
+
+    <section id="skills">
+      <h2></h2>
+      <div class="skill-item">
+        <label for="skill-html">HTML</label>
+        <progress id="skill-html" value="90" max="100"></progress> 90%
+      </div>
+      <div class="skill-item">
+        <label for="skill-css">CSS</label>
+        <progress id="skill-css" value="80" max="100"></progress> 80%
+      </div>
+      <div class="skill-item">
+        <label for="skill-js">JavaScript</label>
+        <progress id="skill-js" value="70" max="100"></progress> 70%
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2></h2>
+      <div class="project-list">
+        <details>
+          <summary>Caesar Cipher</summary>
+          <p>
+            A small project I built for a friend to help exchange secret
+            message.
+          </p>
+          <a href="https://mimo.org" target="_blank">Link to project</a>
+        </details>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
